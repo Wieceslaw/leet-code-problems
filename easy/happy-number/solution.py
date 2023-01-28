@@ -8,9 +8,12 @@ def func(n) -> int:
 
 
 def isHappy(n: int) -> bool:
+    st = {n}
     while n != 1:
         n = func(n)
-        print(n)
+        if n in st:
+            return False
+        st.add(n)
     return True
 
 

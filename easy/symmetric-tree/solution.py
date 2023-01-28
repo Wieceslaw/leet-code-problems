@@ -22,3 +22,6 @@ def isSymmetric(root: Optional[TreeNode]) -> bool:
         return True
 
     return is_palindrome(inorder_traversal(root))
+
+
+print(isSymmetric([1, 2, 2, 2, None, 2]))

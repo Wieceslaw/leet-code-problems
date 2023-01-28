@@ -1,10 +1,11 @@
 def convertToTitle(columnNumber: int) -> str:
-    columnNumber -= 1
+    result = ""
     while columnNumber >= 26:
         n = columnNumber % 26
-        print(n)
+        result = chr(n + 65) + result
         columnNumber = columnNumber // 26
-    print(columnNumber)
+    result = chr(columnNumber + 65) + result
+    return result
 
-# print(chr(65 + 25))
-convertToTitle(28)
+
+print(convertToTitle(52))
