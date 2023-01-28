@@ -1,5 +1,4 @@
 def mySqrt(x: int) -> int:
-    # TODO:
     if x == 0 or x == 1:
         return x
     result = 0
